@@ -41,7 +41,10 @@ c2.assign_teacher(t3)
 c3.assign_teacher(t4)
 
 #removing student
-c1.remove_student("S002")
+#c1.remove_student("S002")
+
+#transfering student
+school.transfer_student_to_other_classroom(s1,"Jupiter","Pluto")
 
 #school status
 school.show_classroom()

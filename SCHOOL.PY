@@ -24,3 +24,15 @@ class School():  #school is responsible for classroom because classroom's imidie
                 print(f"\t {t.name} {t.subject}")
             print("\n")
     
+    def transfer_student_to_other_classroom(self,student,cur_classroom_name,updated_classroom_name):
+        for classroom in self.classrooms:
+            if classroom.name==updated_classroom_name:
+                classroom.add_student(student)
+                break
+
+        for classroom in self.classrooms:
+            if classroom.name==cur_classroom_name:
+                classroom.remove_student(student.roll)
+                break
+
+
